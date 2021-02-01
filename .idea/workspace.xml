@@ -6,48 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de41d9d2-8d87-4c2f-be9c-cd329c837232" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/ab50d33b-7af3-4928-9e48-c0f05fad4e7f.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LibraryWeb.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Query_DB.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/src/main" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/src/main/java" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zhurenko" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zhurenko/ua" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zhurenko/ua/controller" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zhurenko/ua/controller/BookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zhurenko/ua/hebirnate" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zhurenko/ua/hebirnate/HibernateBookDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zhurenko/ua/model" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zhurenko/ua/model/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zhurenko/ua/service" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zhurenko/ua/service/BookInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/zhurenko/ua/service/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html" afterDir="true" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/addBook.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/book.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/searchBook.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/showBooks.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/updateBook.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-    </list>
+    <list default="true" id="de41d9d2-8d87-4c2f-be9c-cd329c837232" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -94,7 +53,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -107,6 +66,7 @@
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="AUTO_COMMIT_ON_CHERRY_PICK" value="true" />
   </component>
   <component name="IdeDocumentHistory">
@@ -160,8 +120,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -435,28 +395,7 @@
   </component>
   <component name="SvnConfiguration" cleanupOnStartRun="true">
     <configuration>C:\Users\Admin\AppData\Roaming\Subversion</configuration>
-  </component>
-  <component name="SvnFileUrlMappingImpl">
-    <option name="myMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="C:\Users\Admin\Desktop\Homework_java\Homework\Web\21.01.30\LibraryWeb" />
-          <option name="myCopyRoot" value="C:\Users\Admin\Desktop\Homework_java\Homework\Web\21.01.30\LibraryWeb" />
-        </SvnCopyRootSimple>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="C:\Users\Admin\Desktop\Homework_java\Homework\Web\21.01.30\LibraryWeb\.idea" />
-          <option name="myCopyRoot" value="C:\Users\Admin\Desktop\Homework_java\Homework\Web\21.01.30\LibraryWeb\.idea" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
-    <option name="myMoreRealMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="C:\Users\Admin\Desktop\Homework_java\Homework\Web\21.01.30\LibraryWeb" />
-          <option name="myCopyRoot" value="C:\Users\Admin\Desktop\Homework_java\Homework\Web\21.01.30\LibraryWeb" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
+    <supportedVersion>125</supportedVersion>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -473,11 +412,20 @@
       <workItem from="1612034405587" duration="252000" />
       <workItem from="1612034704018" duration="236000" />
       <workItem from="1612035611393" duration="40050000" />
+      <workItem from="1612121459979" duration="85000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1612121537440</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1612121537440</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63766000" />
+    <option name="totallyTimeSpent" value="63851000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -491,7 +439,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2881997" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2927383" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -500,7 +448,6 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Learn" order="7" />
       <window_info id="Web" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="SVN Repositories" sideWeight="0.49924356" visible="true" weight="0.32843137" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.44281045" />
@@ -517,6 +464,7 @@
       <window_info anchor="bottom" id="Database Changes" order="13" weight="0.32843137" />
       <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="bottom" id="Spring" order="15" weight="0.32843137" />
+      <window_info anchor="bottom" id="SVN Repositories" order="16" sideWeight="0.49924356" visible="true" weight="0.32843137" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -533,7 +481,8 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ab50d33b-7af3-4928-9e48-c0f05fad4e7f/console.sql">
