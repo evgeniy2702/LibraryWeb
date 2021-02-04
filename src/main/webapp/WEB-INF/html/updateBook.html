@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <title>Update Book</title>
     <style>
-        .error{
-            color: red;
+        table, th, td {
+            border: 1px solid;
+        }
+        th {
+            text-align: left;
         }
     </style>
 </head>
@@ -15,18 +18,25 @@
     <table>
         <tr>
             <th>Name of Book</th>
+            <td><input type="text"  th:field="*{name}"/></td>
+        <tr>
             <th>Author</th>
-            <th>Year</th>
-            <th>Stile</th>
-            <th>Number of pages</th>
-            <th>Description of book</th>
+            <td><input type="text" th:field="*{author}"/></td>
         </tr>
         <tr>
-            <td><input type="text"  th:field="*{name}"/></td>
-            <td><input type="text" th:field="*{author}"/></td>
+            <th>Year</th>
             <td><input type="number" th:field="*{year}"/></td>
+        </tr>
+        <tr>
+            <th>Stile</th>
             <td><input type="text" th:field="*{stileOfBook}"/></td>
+        </tr>
+        <tr>
+            <th>Number of pages</th>
             <td><input type="number" th:field="*{numPages}"/></td>
+        </tr>
+        <tr>
+            <th>Description of book</th>
             <td><input type="text" th:field="*{description}"/></td>
         </tr>
     </table>

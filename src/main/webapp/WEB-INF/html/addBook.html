@@ -7,6 +7,12 @@
         .error{
             color: red;
         }
+        table, th, td {
+            border: 1px solid;
+        }
+        th {
+            text-align: left;
+        }
     </style>
 </head>
 <body>
@@ -15,18 +21,26 @@
     <table>
         <tr>
             <th>Name of Book</th>
-            <th>Author</th>
-            <th>Year</th>
-            <th>Stile</th>
-            <th>Number of pages</th>
-            <th>Description of book</th>
+            <td><input type="text"  th:field="*{name}"/></td>
         </tr>
         <tr>
-            <td><input type="text"  th:field="*{name}"/></td>
+            <th>Author</th>
             <td><input type="text" th:field="*{author}"/></td>
+        </tr>
+        <tr>
+            <th>Year</th>
             <td><input type="number" th:field="*{year}"/></td>
+        </tr>
+        <tr>
+            <th>Stile</th>
             <td><input type="text" th:field="*{stileOfBook}"/></td>
+        </tr>
+        <tr>
+            <th>Number of pages</th>
             <td><input type="number" th:field="*{numPages}"/></td>
+        </tr>
+        <tr>
+            <th>Description of book</th>
             <td><input type="text" th:field="*{description}"/></td>
         </tr>
     </table>
@@ -34,7 +48,29 @@
     <p><input type="submit" value="Submit"/>
 
 </form>
-
+<div th:if="${not #lists.isEmpty(bookDB)}">
+    <table>
+        <h3 th:text="${string}"></h3>
+            <tr>
+                <th>Id</th>
+                <th>Name of Book</th>
+                <th>Author</th>
+                <th>Year</th>
+                <th>Stile</th>
+                <th>Number of pages</th>
+                <th>Description of book</th>
+            </tr>
+            <tr th:each="book: ${bookDB}">
+                <td th:text="${book.id}">
+                <td th:text="${book.name}">Name</td>
+                <td th:text="${book.author}">Author</td>
+                <td th:text="${book.year}">Year</td>
+                <td th:text="${book.stileOfBook}">Stile of Book</td>
+                <td th:text="${book.numPages}">Number of Pages</td>
+                <td th:text="${book.description}">Description</td>
+            </tr>
+        </table>
+</div>
 <p><a th:href="@{/}" >Start page</a></p>
 
 </body>

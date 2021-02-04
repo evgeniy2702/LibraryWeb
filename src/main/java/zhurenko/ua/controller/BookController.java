@@ -7,6 +7,8 @@ import zhurenko.ua.model.Book;
 import zhurenko.ua.service.BookService;
 
 import java.sql.SQLException;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Controller
 public class BookController {
@@ -48,9 +50,27 @@ public class BookController {
     }
 
     @PostMapping("/book/add")
-    public String saveBook(@ModelAttribute Book book){
-        bookService.saveBook(book);
-        return "redirect:/";
+    public String saveBook(@ModelAttribute Book book,
+                           Model model){
+        if(bookService.getAllBooks().stream().filter(b -> b.getName().equalsIgnoreCase(book.getName()) &&
+                b.getAuthor().equalsIgnoreCase(book.getAuthor()) &&
+                b.getYear() == book.getYear() &&
+                b.getStileOfBook().equalsIgnoreCase(book.getStileOfBook()) &&
+                b.getNumPages() == book.getNumPages() &&
+                b.getDescription().equalsIgnoreCase(book.getDescription()))
+                .collect(Collectors.toList()).isEmpty()) {
+            bookService.saveBook(book);
+            return "redirect:/";
+        }
+        else{
+            model.addAttribute("string", "Such a book already exists!" );
+            List<Book> book1 = bookService.getAllBooks().stream()
+                                                        .filter(b -> b.getName().equalsIgnoreCase(book.getName()))
+                                                        .collect(Collectors.toList());
+            System.out.println(book1.toString());
+            model.addAttribute("bookDB", book1);
+            return "addBook";
+        }
     }
 
     @PostMapping("/book/update/{id}")
@@ -69,6 +89,7 @@ public class BookController {
 
     @GetMapping("/book/search")
     public String search(@ModelAttribute Book book){
+
         return "searchBook";
     }
 

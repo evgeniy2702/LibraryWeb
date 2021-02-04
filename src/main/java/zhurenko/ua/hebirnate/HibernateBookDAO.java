@@ -42,7 +42,6 @@ public class HibernateBookDAO {
     public void deleteBook(Book book){
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-
         String deleteHql = "delete from books where id = ?;";
         Query delete = session.createNativeQuery(deleteHql);
                 delete.setParameter(1, book.getId());
@@ -56,9 +55,7 @@ public class HibernateBookDAO {
 
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-
         session.saveOrUpdate(book);
-
         transaction.commit();
         session.close();
     }

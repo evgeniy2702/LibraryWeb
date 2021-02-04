@@ -3,34 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <title>Book_info</title>
+    <style>
+        table, th, td {
+            border: 1px solid;
+        }
+        th {
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
 <h2>Book info :</h2>
 <table>
     <tr>
         <th>Id</th>
-        <th>Name of Book</th>
-        <th>Author</th>
-        <th>Year</th>
-        <th>Stile</th>
-        <th>Number of pages</th>
-        <th>Description of book</th>
-        <th>Delete</th>
+        <td th:text="${book.id}"></td>
     </tr>
     <tr>
-        <td th:text="${book.id}"></td>
+        <th>Name of Book</th>
         <td th:text="${book.name}"></td>
+    </tr>
+    <tr>
+        <th>Author</th>
         <td th:text="${book.author}"></td>
+    </tr>
+    <tr>
+        <th>Year</th>
         <td th:text="${book.year}"></td>
+    </tr>
+    <tr>
+        <th>Stile</th>
         <td th:text="${book.stileOfBook}"></td>
+    </tr>
+    <tr>
+        <th>Number of pages</th>
         <td th:text="${book.numPages}"></td>
+    </tr>
+    <tr>
+        <th>Description of book</th>
         <td th:text="${book.description}"></td>
+    </tr>
+        <th>Delete</th>
         <td><a th:href="@{/book/delete/{id}( id= ${ book.getId() } ) }">Delete</a></td>
     </tr>
 </table>
 
 <p><a th:href="@{/book/update/{id}( id= ${ book.getId() } ) }"> Update book</a></p>
-<br>
 <p><a th:href="@{/}" >Start page</a></p>
 
 
